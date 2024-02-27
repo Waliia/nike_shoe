@@ -17,12 +17,17 @@ class Cart extends ChangeNotifier {
     Shoe(
         name: 'Easter',
         price: '145',
-        imagePath: 'images/shoe1.jpg',
+        imagePath: 'images/shoe3.jpg',
         description: 'description'),
     Shoe(
         name: 'Western',
         price: '299',
-        imagePath: 'images/shoe2.jpg',
+        imagePath: 'images/shoe4.jpg',
+        description: 'description'),
+    Shoe(
+        name: 'Dalton',
+        price: '299',
+        imagePath: 'images/shoe5.jpg',
         description: 'description'),
   ];
 

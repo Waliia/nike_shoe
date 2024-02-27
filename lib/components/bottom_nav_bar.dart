@@ -18,7 +18,7 @@ class MyBottomNavBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           tabBorderRadius: 16,
           gap: 8,
-          tabs: [
+          tabs: const [
             GButton(icon: Icons.home, text: 'Home'),
             GButton(
               icon: Icons.shopping_bag_rounded,

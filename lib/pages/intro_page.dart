@@ -49,7 +49,7 @@ class IntroPage extends StatelessWidget {
               onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomePage(),
+                    builder: (context) => const HomePage(),
                   )),
               child: Container(
                 padding: const EdgeInsets.all(25),
@@ -60,7 +60,7 @@ class IntroPage extends StatelessWidget {
                   child: Text(
                     'Shop Now',
                     style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.bold),
                   ),

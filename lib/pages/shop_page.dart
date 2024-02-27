@@ -17,7 +17,7 @@ class _MyShopPageState extends State<MyShopPage> {
 
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (context) => const AlertDialog(
         title: Text('Successfully added'),
         content: Text('Check out the cart'),
       ),
@@ -34,7 +34,7 @@ class _MyShopPageState extends State<MyShopPage> {
               children: [
                 Container(
                   padding: const EdgeInsets.all(12),
-                  // margin: const EdgeInsets.symmetric(horizontal: 25),
+                  margin: const EdgeInsets.symmetric(horizontal: 25),
                   decoration: BoxDecoration(
                       color: Colors.grey.shade100,
                       borderRadius: BorderRadius.circular(8)),
@@ -66,7 +66,7 @@ class _MyShopPageState extends State<MyShopPage> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        'Hot Picks',
+                        'Hot Picks 🔥', // Unicode for fire \u{1F525}
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 28),
                       ),
@@ -83,7 +83,7 @@ class _MyShopPageState extends State<MyShopPage> {
                 ),
                 Expanded(
                   child: ListView.builder(
-                    itemCount: 4,
+                    itemCount: value.getShoes().length,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       Shoe shoe = value.getShoes()[index];
