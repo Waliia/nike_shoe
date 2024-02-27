@@ -34,10 +34,10 @@ class _MyShopPageState extends State<MyShopPage> {
               children: [
                 Container(
                   padding: const EdgeInsets.all(12),
-                  margin: const EdgeInsets.symmetric(vertical: 25),
+                  // margin: const EdgeInsets.symmetric(horizontal: 25),
                   decoration: BoxDecoration(
-                      color: Colors.grey.shade200,
-                      borderRadius: BorderRadius.circular(12)),
+                      color: Colors.grey.shade100,
+                      borderRadius: BorderRadius.circular(8)),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -63,7 +63,7 @@ class _MyShopPageState extends State<MyShopPage> {
                   padding: EdgeInsets.symmetric(horizontal: 24),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
                         'Hot Picks',
