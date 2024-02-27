@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_shoe/pages/home_page.dart';
 import 'package:nike_shoe/pages/intro_page.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.grey.shade300,
         useMaterial3: true,
       ),
-      home: const IntroPage(),
+      home: const HomePage(),
     );
   }
 }
